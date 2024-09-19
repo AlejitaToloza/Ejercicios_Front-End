@@ -1,0 +1,136 @@
+:root {
+  --font-primary: "Outfit";
+  --font-secundary: "Young Serif";
+
+  --color-White-100: hsl(0, 0%, 100%);
+  --color-Stone-100: hsl(30, 54%, 90%);
+  --color-Stone-150: hsl(30, 18%, 87%);
+  --color-Stone-600: hsl(30, 10%, 34%);
+  --color-Stone-900: hsl(24, 5%, 18%);
+  --color-Brown-800: hsl(14, 45%, 36%);
+  --color-Rose-800: hsl(332, 51%, 32%);
+  --color-Rose-50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('../assets/fonts/outfit/static/Outfit-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('../assets/fonts/outfit/static/Outfit-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('../assets/fonts/outfit/static/Outfit-Bold.ttf');
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-Stone-100);
+    font-family: var(--font-primary);
+    margin: 2rem;
+}
+button{
+    cursor: pointer;
+    display: block;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-family: inherit;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    display: block;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.main{
+    padding: 2rem;
+    background: var(--color-White-100); 
+    border-radius: 1.5rem;
+    box-shadow: 0 0 30px black;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.block{
+    background-color: aqua;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.recipe__title,
+.ingredients__title,
+.instructions__title,
+.nutrition__title {
+    font-family: var(--font-secundary);
+    font-weight: 400;
+    margin: 1.5rem;
+}
+
+.preparation__title {
+   margin-left: 1.5rem;
+}
+
+.preparation__title,
+.ingredients__title,
+.instructions__title,
+.nutrition__title {
+    color: var(--color-Rose-800);
+}
+
+.preparation{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--color-Rose-50);
+    border-radius: 1.5rem;
+}
+
+.preparation__list,
+.ingredients__list,
+.instructions__list {
+    margin-left: 2.7rem;
+}
+
+.recipe__text,
+.nutrition__text {
+    margin-left: 1.5rem;
+}
+
+.main__image {
+    border-radius: 1.5rem;
+}
+
+.container {
+    width: 100%; /* O el ancho que necesites */
+    text-align: center; /* Opcional: centrar el contenido si es necesario */
+}
+.line {
+    display: block;
+    width: 95%;
+    height: 1.5px;
+    background:var(--color-Stone-100);
+    margin: 16px auto ;
+}
