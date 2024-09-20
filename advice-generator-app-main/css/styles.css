@@ -1,0 +1,31 @@
+:root{
+    --font-family: "Manrope", sans-serif;
+
+    --color-white: hsl(193, 38%, 86%);
+    --color-green: hsl(150, 100%, 66%) ;   
+    --color-grey-100: hsl(217, 19%, 38%);
+    --color-grey-200: hsl(217, 19%, 24%);
+    --color-black: hsl(218, 23%, 16%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-family);
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card__title {
+    color: var(--color-green);
+}
+
