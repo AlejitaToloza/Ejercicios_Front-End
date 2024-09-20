@@ -44,6 +44,11 @@ body{
     font-family: var(--font-primary);
     margin: 2rem;
 }
+p,li{
+    color: var(--color-Stone-600);
+    line-height: 1.5;
+}
+
 button{
     cursor: pointer;
     display: block;
@@ -66,14 +71,17 @@ img{
 }
 
 .main{
-    padding: 2rem;
+    padding: 2.25rem;
     background: var(--color-White-100); 
     border-radius: 1.5rem;
-    box-shadow: 0 0 30px black;
-    max-width: 900px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.064);
+    max-width: 768px;
     margin: auto;
 }
 
+.main__figure{
+    margin-bottom: 2rem;
+}
 
 .block{
     background-color: aqua;
@@ -87,40 +95,72 @@ img{
 .nutrition__title {
     font-family: var(--font-secundary);
     font-weight: 400;
-    margin: 1.5rem;
+    margin-bottom: .875rem;
 }
 
-.preparation__title {
-   margin-left: 1.5rem;
-}
 
 .preparation__title,
 .ingredients__title,
 .instructions__title,
 .nutrition__title {
-    color: var(--color-Rose-800);
+    color: var(--color-Brown-800);
 }
+
+.recipe__title{
+    font-size: 2rem;
+}
+
 
 .preparation{
-    margin: 1rem;
-    padding: 1rem;
+    margin-top: 2rem;
+    padding: 1.75rem;
     background-color: var(--color-Rose-50);
-    border-radius: 1.5rem;
+    border-radius: 1rem;
 }
+.preparation__list{
+    margin-top: 1rem;
+}
+
 
 .preparation__list,
-.ingredients__list,
-.instructions__list {
-    margin-left: 2.7rem;
+.ingredients__list {
+  list-style-position: inside;
 }
 
-.recipe__text,
-.nutrition__text {
-    margin-left: 1.5rem;
+:is(.preparation__list,.ingredients__list) ::marker{
+    color: var(--color-Brown-800);
 }
+
+
+.instructions__list{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.25rem;
+    list-style-position:initial ;
+    gap: .375rem;
+}
+.instructions__item{
+    padding-left: 1rem;
+}
+.instructions__item::marker{
+    color: var(--color-Brown-800);
+    font-weight: 700;
+}
+
 
 .main__image {
     border-radius: 1.5rem;
+}
+
+
+.ingredients,
+.instructions,
+.nutrition{
+    padding: 2rem 0;
+}
+.ingredients,
+.instructions{
+    border-bottom: 1px solid var(--color-Stone-100);
 }
 
 .container {
@@ -133,4 +173,22 @@ img{
     height: 1.5px;
     background:var(--color-Stone-100);
     margin: 16px auto ;
+}
+.table{
+    margin-top: 1rem;
+    display: table;
+    width: 100%;
+}
+
+.table__column{
+    padding: .75rem 0;
+    border-bottom: 1px solid var(--color-Stone-150);
+}
+
+.table__row .table__column:first-child{
+    color: var(--color-Stone-600);
+}
+.table__row .table__column:last-child{
+    color: var(--color-Brown-800);
+    font-weight: 700;
 }
