@@ -13,182 +13,198 @@
 }
 
 @font-face {
-    font-family: 'Young Serif';
-    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf');
-    font-weight: 400;
+  font-family: "Young Serif";
+  src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf");
+  font-weight: 400;
 }
 @font-face {
-    font-family: 'Outfit';
-    src: url('../assets/fonts/outfit/static/Outfit-Regular.ttf');
-    font-weight: 400;
+  font-family: "Outfit";
+  src: url("../assets/fonts/outfit/static/Outfit-Regular.ttf");
+  font-weight: 400;
 }
 @font-face {
-    font-family: 'Outfit';
-    src: url('../assets/fonts/outfit/static/Outfit-SemiBold.ttf');
-    font-weight: 600;
+  font-family: "Outfit";
+  src: url("../assets/fonts/outfit/static/Outfit-SemiBold.ttf");
+  font-weight: 600;
 }
 @font-face {
-    font-family: 'Outfit';
-    src: url('../assets/fonts/outfit/static/Outfit-Bold.ttf');
-    font-weight: 700;
+  font-family: "Outfit";
+  src: url("../assets/fonts/outfit/static/Outfit-Bold.ttf");
+  font-weight: 700;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: var(--color-Stone-100);
-    font-family: var(--font-primary);
-    margin: 2rem;
+body {
+  background-color: var(--color-Stone-100);
+  font-family: var(--font-primary);
 }
-p,li{
-    color: var(--color-Stone-600);
-    line-height: 1.5;
-}
-
-button{
-    cursor: pointer;
-    display: block;
-    background-color: transparent;
-    border: 0;
-    outline: 0;
-    font-family: inherit;
+p,
+li {
+  color: var(--color-Stone-600);
+  line-height: 1.5;
 }
 
-a{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
+button {
+  cursor: pointer;
+  display: block;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  font-family: inherit;
 }
 
-img{
-    display: block;
-    object-fit: cover;
-    max-width: 100%;
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
 }
 
-.main{
+img {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.main {
     padding: 2.25rem;
-    background: var(--color-White-100); 
+    background: var(--color-White-100);
     border-radius: 1.5rem;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.064);
     max-width: 768px;
     margin: auto;
+    width: 90%;
+    margin-top: 2rem;
 }
 
-.main__figure{
-    margin-bottom: 2rem;
+.main__figure {
+  margin-bottom: 2rem;
 }
 
-.block{
-    background-color: aqua;
-    margin: 0 auto;
-    width: 80%;
+.block {
+  background-color: aqua;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .recipe__title,
 .ingredients__title,
 .instructions__title,
 .nutrition__title {
-    font-family: var(--font-secundary);
-    font-weight: 400;
-    margin-bottom: .875rem;
+  font-family: var(--font-secundary);
+  font-weight: 400;
+  margin-bottom: 0.875rem;
 }
-
 
 .preparation__title,
 .ingredients__title,
 .instructions__title,
 .nutrition__title {
-    color: var(--color-Brown-800);
+  color: var(--color-Brown-800);
 }
 
-.recipe__title{
-    font-size: 2rem;
+.recipe__title {
+  font-size: 2rem;
 }
 
-
-.preparation{
-    margin-top: 2rem;
-    padding: 1.75rem;
-    background-color: var(--color-Rose-50);
-    border-radius: 1rem;
+.preparation {
+  margin-top: 2rem;
+  padding: 1.75rem;
+  background-color: var(--color-Rose-50);
+  border-radius: 1rem;
 }
-.preparation__list{
-    margin-top: 1rem;
+.preparation__list {
+  margin-top: 1rem;
 }
-
 
 .preparation__list,
 .ingredients__list {
   list-style-position: inside;
 }
 
-:is(.preparation__list,.ingredients__list) ::marker{
-    color: var(--color-Brown-800);
+:is(.preparation__list, .ingredients__list) ::marker {
+  color: var(--color-Brown-800);
 }
 
-
-.instructions__list{
-    display: flex;
-    flex-direction: column;
-    padding-left: 1.25rem;
-    list-style-position:initial ;
-    gap: .375rem;
+.instructions__list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.25rem;
+  list-style-position: initial;
+  gap: 0.375rem;
 }
-.instructions__item{
-    padding-left: 1rem;
+.instructions__item {
+  padding-left: 1rem;
 }
-.instructions__item::marker{
-    color: var(--color-Brown-800);
-    font-weight: 700;
+.instructions__item::marker {
+  color: var(--color-Brown-800);
+  font-weight: 700;
 }
-
 
 .main__image {
-    border-radius: 1.5rem;
+  border-radius: 1.5rem;
 }
-
 
 .ingredients,
 .instructions,
-.nutrition{
-    padding: 2rem 0;
+.nutrition {
+  padding: 2rem 0;
 }
 .ingredients,
-.instructions{
-    border-bottom: 1px solid var(--color-Stone-100);
+.instructions {
+  border-bottom: 1px solid var(--color-Stone-100);
 }
 
 .container {
-    width: 100%; /* O el ancho que necesites */
-    text-align: center; /* Opcional: centrar el contenido si es necesario */
+  width: 100%; /* O el ancho que necesites */
+  text-align: center; /* Opcional: centrar el contenido si es necesario */
 }
 .line {
-    display: block;
-    width: 95%;
-    height: 1.5px;
-    background:var(--color-Stone-100);
-    margin: 16px auto ;
+  display: block;
+  width: 95%;
+  height: 1.5px;
+  background: var(--color-Stone-100);
+  margin: 16px auto;
 }
-.table{
-    margin-top: 1rem;
-    display: table;
+.table {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.table__column {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-Stone-150);
+}
+
+.table__row .table__column:first-child {
+  color: var(--color-Stone-600);
+}
+.table__row .table__column:last-child {
+  color: var(--color-Brown-800);
+  font-weight: 700;
+}
+
+@media screen and (width <= 426px) {
+  .main {
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
     width: 100%;
-}
+    margin-top: 0;
+  }
 
-.table__column{
-    padding: .75rem 0;
-    border-bottom: 1px solid var(--color-Stone-150);
-}
+  .main__image {
+    border-radius: 0;
+  }
+  .main__body {
+    margin: 0 2rem;
+  }
 
-.table__row .table__column:first-child{
-    color: var(--color-Stone-600);
-}
-.table__row .table__column:last-child{
-    color: var(--color-Brown-800);
-    font-weight: 700;
+  .recipe__title{
+    font-size: 1.75rem;
+  }
 }
