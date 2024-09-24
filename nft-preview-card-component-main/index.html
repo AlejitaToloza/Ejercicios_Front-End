@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet">
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <figure class="card__figure">
+          <img class="card__image" src="./images/image-equilibrium.jpg" alt="image of Equilibrium" />
+          <div class="card__hover">
+            <img src="./images/icon-view.svg" alt="icon-view" class="card__hover-image">
+          </div>
+        </figure>
+
+        <div class="card__info">
+          <h1 class="card__info-title">Equilibrium #3429</h1>
+          <p class="card__info-text">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+        </div>
+
+        <div class="card__item">
+          <div class="card__item-unit">
+            <img class="card__item-image" src="./images/icon-ethereum.svg" alt="icon-ethereum" />
+            <span class="card__item-value">0.041 ETH</span>
+          </div>
+          <div class="card__item-unit">
+            <img class="card__item-image" src="./images/icon-clock.svg" alt="icon-clock" />
+            <span class="card__item-time">3 days left</span>
+          </div>
+        </div>
+
+        <footer class="card__profile">
+          <img class="card__profile-image" src="/images/image-avatar.png">
+          <p class="card__profile-text">Creation of <b class="card__profile-name">Jules Wyvern</b></p>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-blue: hsl(215, 51%, 70%);
+    --color-cyan: hsl(178, 100%, 50%);
+    --color-blue-main:hsl(217, 54%, 11%);
+    --color-blue-card: hsl(216, 50%, 16%);
+    --color-blue-line:hsl(215, 32%, 27%);
+    --color-white:hsl(0, 0%, 100%);
+
+    --font-family: "Outfit";
+    --font-weight-300:300;
+    --font-weight-400:400;
+    --font-weight-600:600;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--color-blue-main);
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.card {
+    background-color: var(--color-blue-card);
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 300px;
+    padding: 1rem;
+    box-shadow: 0 0 30px hsla(216, 83%, 9%, 0.295);
+}
+
+.card__image {
+    border-radius: 0.5rem;
+}
+
+.card__info-title {
+    color: var(--color-white);
+    font-weight: var(--font-weight-600);
+    font-size: 1.25rem;
+    margin: 1rem 0 .5rem;
+    transition: color 0.4s ease;
+}
+
+.card__info-text,
+.card__item-value {
+    color: var(--color-blue);
+    line-height: 1.5;
+}
+
+.card__item {    
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 0;
+   border-bottom: 1px solid var(--color-blue-line);   
+}
+
+.card__item-unit {
+    display: flex;
+    gap: .5rem;
+    font-size: 14px;
+}
+
+.card__item-value {
+    color: var(--color-cyan);
+}
+
+.card__item-time,
+.card__profile-text {
+    color: var(--color-blue);
+}
+
+.card__profile-name {
+    color: var(--color-white);
+    font-weight: var(--font-weight-300);
+    transition: color 0.4s ease;
+}
+
+.card__profile-image {
+    width: 2rem;
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+}
+
+
+.card__profile {
+    padding: 1rem 0 .5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card__info-title:hover,
+.card__profile-name:hover {
+    color: var(--color-cyan);
+    cursor: pointer;
+}
+
+.card__figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.card__figure:hover .card__hover{
+    opacity: 1;
+}
+
+.card__hover {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  hsla(178, 100%, 50%, 0.486);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
